@@ -20,13 +20,31 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI contadorPecesText;
     public TextMeshProUGUI contadorRondaText;
 
+
     // Start is called before the first frame update
     void Start()
     {
         SpawnPeces();
         pecesPescados = 0;
         nivelSpawn = 1;
+
     }
+
+    private float DeterminarRangoSpawn(GameObject pezPrefab)
+    {
+        switch (pezPrefab.name)
+        {
+            case "Pez 1":
+                return Random.Range(3f, 6f);
+            case "Pez 3":
+                return Random.Range(7f, 10f);
+            case "Pez 2":
+                return Random.Range(10f, 15f);
+            default:
+                return 1f; // Un valor predeterminado
+        }
+    }
+
 
     // Método para spawnear enemigos en puntos específicos
     public void SpawnPeces()
@@ -35,23 +53,34 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+
         int cantidadPeces = Random.Range(1, 3);
         for (int i = 0; i < cantidadPeces; i++)
         {
-            // Posición aleatoria dentro de los rangos definidos
-            Vector3 randomSpawnPosition = new Vector3(Random.Range(minPos, maxPos), -1f, Random.Range(minPos, maxPos));
-
             // Elegir un prefab de pez aleatorio
             GameObject randomPezPrefab = pecesPrefabs[Random.Range(0, pecesPrefabs.Count)];
 
-            // Spawnear el pez en la posición aleatoria y en el punto de spawn
-            //Instantiate(randomPezPrefab, randomSpawnPosition, Quaternion.identity);
+            // Determinar el rango de spawn basado en el tipo de pez
+            float spawnRange = DeterminarRangoSpawn(randomPezPrefab);
+
+            // Generar una posición aleatoria dentro del rango de spawn
+            Vector3 randomSpawnPosition = GenerarPosicionSpawn(spawnRange);
 
             GameObject newFish = Instantiate(randomPezPrefab, randomSpawnPosition, Quaternion.identity);
             newFish.GetComponent<MovimientoPeces>().enabled = true;
             pecesEnPantalla++;
         }
     }
+
+    private Vector3 GenerarPosicionSpawn(float rango)
+    {
+        float angle = Random.Range(0, 2 * Mathf.PI);
+        float x = rango * Mathf.Cos(angle);
+        float z = rango * Mathf.Sin(angle);
+        float y = Random.Range(-1f, -0.55f); // Rango de profundidad desde la superficie hasta más abajo
+        return new Vector3(x, y, z); // Coordenadas en el plano XZ con altura Y ajustada
+    }
+
 
     public void DecrementarPecesEnPantalla()
     {

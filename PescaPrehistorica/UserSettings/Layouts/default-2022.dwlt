@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 757
+    x: 1278
     y: 0
-    width: 657
+    width: 136
     height: 580
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -240,7 +240,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 267
     y: 0
-    width: 490
+    width: 1011
     height: 580
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -341,9 +341,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3e8e0000
-      m_LastClickedID: 36414
-      m_ExpandedIDs: 82aeffffd0aefffffcb1ffff18b2ffff7abaffff04c4ffff52c4ffff7ac7ffff96c7ffff20fbffffa0710000748a0000608e0000fe8e0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: a29dfffff89dffffe4a0fffffca0ffff66caffffb4caffffdacdfffff2cdffff14fbffffa27100005a8600007c860000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -390,7 +390,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 267
     y: 73
-    width: 488
+    width: 1009
     height: 559
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: -603, y: -614}
-      snapOffsetDelta: {x: 0, y: 55}
+      snapOffsetDelta: {x: 115, y: 55}
       snapCorner: 3
       id: UnityEditor.SceneViewCameraOverlay
       index: 0
@@ -764,7 +764,7 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -787,7 +787,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.07087924, y: 0.3821265, z: -0.029400202, w: 0.92093545}
     speed: 2
-    m_Value: {x: 0.07092216, y: 0.38073877, z: -0.029293396, w: 0.9214933}
+    m_Value: {x: 0.07087815, y: 0.38212058, z: -0.029399745, w: 0.9209212}
   m_Size:
     m_Target: 6.413715
     speed: 2
@@ -983,7 +983,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/AQUAS-Lite/Prefabs
+    - Assets/Prefabs/Assets Peces/Pez 3/source
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -991,16 +991,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/AQUAS-Lite/Prefabs
+  - Assets/Prefabs/Assets Peces/Pez 3/source
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\UNIVERSIDAD\QUINTO\DISPOSITIVOS MOBILES\Juego AR\RA\PescaPrehistorica
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: f2750000
-    m_LastClickedID: 30194
-    m_ExpandedIDs: 00000000d87400009275000000ca9a3bffffff7f
+    m_SelectedIDs: 848b0000
+    m_LastClickedID: 35716
+    m_ExpandedIDs: 00000000d8740000f2740000fa74000032870000548700005687000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1140,9 +1140,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 757
+    x: 1278
     y: 73
-    width: 655
+    width: 134
     height: 559
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 655, y: 538}
+  m_TargetSize: {x: 134, y: 538}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1177,8 +1177,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -327.5
-    m_HBaseRangeMax: 327.5
+    m_HBaseRangeMin: -67
+    m_HBaseRangeMax: 67
     m_VBaseRangeMin: -269
     m_VBaseRangeMax: 269
     m_HAllowExceedBaseRangeMin: 1
@@ -1198,23 +1198,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 655
+      width: 134
       height: 538
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 327.5, y: 269}
+    m_Translation: {x: 67, y: 269}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -327.5
+      x: -67
       y: -269
-      width: 655
+      width: 134
       height: 538
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 655, y: 559}
+  m_LastWindowPixelSize: {x: 134, y: 559}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
